@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.ribbon {
+		font-size: 16px !important;
+		
+		width: 300px;
+			
+		position: relative;
+		background: #C50F0F;
+		color: #fff;
+		text-align: center;
+		padding: 1em 2em; 
+		margin: 2em auto 3em; 
+		}
+		.ribbon:before, .ribbon:after {
+		content: "";
+		position: absolute;
+		display: block;
+		bottom: -1em;
+		border: 1.5em solid #B41111;
+		z-index: -1;
+		}
+		.ribbon:before {
+		left: -2em;
+		border-right-width: 1.5em;
+		border-left-color: transparent;
+		}
+		.ribbon:after {
+		right: -2em;
+		border-left-width: 1.5em;
+		border-right-color: transparent;
+		}
+		.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+		content: "";
+		position: absolute;
+		display: block;
+		border-style: solid;
+		border-color: #804f7c transparent transparent transparent;
+		bottom: -1em;
+		}
+		.ribbon .ribbon-content:before {
+		left: 0;
+		border-width: 1em 0 0 1em;
+		}
+		.ribbon .ribbon-content:after {
+		right: 0;
+		border-width: 1em 1em 0 0;
+		}
+		
+		.non-semantic-protector { position: relative; z-index: 1; }
+
+		#container{
+		border:30px;
+		border-image-source:url(crayon.png);
+		border-image-slice:150;
+		border-image-repeat:no-repeat;
+		border-image-width:50px;
+		border-image-outset:0px;
+		width:25%;
+		padding:10px;
+		margin-left:auto;
+		margin-right:auto;
+		font-size:18px;
+		text-align:center;
+	}
+	</style>
+</head>
+<body>
+
+<div class="non-semantic-protector"> 
+	<h1 class="ribbon">
+		<strong class="ribbon-content">Alvin Web</strong>
+	</h1>
+</div>
+<div id="container">
+    		<p>Ini merupakan web saya </p>
+            <p>Web ini masih dalam tahap pengembang jadi mohon maaf jika masih banyak kekurangan dari web ini</p>
+    </div>
+</body>
+</html>
