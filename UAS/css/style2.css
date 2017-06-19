@@ -128,3 +128,16 @@ iframe {
   width: 800px;
    height: 280px;
 }
+#subscribe a{
+ display: block;
+ font-size: 13px;
+    font-weight: bold;
+  float: left;
+    border: 0;
+  -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+         border-radius: 3px;
+ padding: 0 10px;
+    height: 35px;
+}
+ 
