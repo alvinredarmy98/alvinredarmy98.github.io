@@ -1,4 +1,3 @@
-//Database Soal
 var all_questions = [{
   question_string: "Hasil Penjumlahan dari 10 + 5 adalah",
   choices: {
